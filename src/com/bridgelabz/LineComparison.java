@@ -22,8 +22,10 @@ public class LineComparison {
         int y4 = sc.nextInt();
         double length2 = Math.sqrt((x4-x3)^2+(y4-y3)^2);
         if (length1 == length2)
-            System.out.println("Two lines are equal");
+            System.out.println("Line1 is equal to Line2");
+        else if (length1 > length2)
+            System.out.println("Line1 is greater than Line2");
         else
-            System.out.println("Two lines are not equal");
+            System.out.println("Line1 is less than Line2");
     }
 }
